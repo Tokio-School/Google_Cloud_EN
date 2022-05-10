@@ -26,7 +26,9 @@ To submit an assignment, follow these steps:
     -	Below in this document you will find a sample question and answer structure.
 6.	Once you have completed all the assignments for a submission, compress the submission folder into a single file (in any format, preferably ZIP), make sure that the compressed file follows the same nomenclature and submit it through the platform.
 7.	If you are having trouble progressing and want the teacher to help you, you can compress the sub-folder of an exercise and send it by message on the platform. If there are several exercises, you can follow the same instructions as for handing in a practical exercise.
+
 Example of the structure of the answers to the questions file:
+
 M2U1-1-questions.txt
 
 Task 1:
