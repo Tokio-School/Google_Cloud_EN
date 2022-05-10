@@ -34,7 +34,7 @@ Start this exercise on the main page of the console. You can always return to it
   2. Button to return to the main dashboard:  **Google Cloud Platform**  after the previous one.
   3. Project selection menu: 3 white hexagons and the name of the project or &quot;Select a project&quot; after the previous one.
   4. Main search box for services or resources: next, in the centre of the blue top bar.
-  5. Button to activate Cloud Shell: button  **\&gt;\_** on the right of the blue top bar.
+  5. Button to activate Cloud Shell: button  **>_** on the right of the blue top bar.
   6. Notifications: bell button after the previous one.
   7. Preferences: button with 3 vertical points after the previous one.
   8. Logged in user: rightmost button in the top blue bar, with your Google account avatar.
@@ -71,14 +71,14 @@ Now let&#39;s navigate to the services side menu:
 As examples, search the menu and the search bar for the following sections:
 
 1. **Compute Engine - VM Instances**
-2. **Cloud Storage \&gt; Browser**
-3. **VPC Network \&gt; VPC Networks**
-4. **IAM &amp; admin \&gt; IAM**
+2. **Cloud Storage > Browser**
+3. **VPC Network > VPC Networks**
+4. **IAM & admin > IAM**
 5. **Invoicing**
-6. **IAM &amp; Admin \&gt; Fees**
-7. **Compute Engine \&gt; Disks**
-8. **VPC Network \&gt; Firewall**
-9. **Network Services \&gt; Load Balancing**
+6. **IAM & Admin > Fees**
+7. **Compute Engine > Disks**
+8. **VPC Network > Firewall**
+9. **Network Services > Load Balancing**
 
 **Console Configuration**
 
@@ -99,15 +99,15 @@ To find the tutorials again, you can search for the  **Learning**  button on the
 
 For example, look for this button on the following pages:
 
-1. **Compute Engine \&gt; Instance Templates**
-2. **Cloud Storage \&gt; Navigation**
-3. **App Engine \&gt; Panel**
+1. **Compute Engine > Instance Templates**
+2. **Cloud Storage > Navigation**
+3. **App Engine > Panel**
 
 **Enable APIs**
 
 Let&#39;s explore the APIs of the available services and how to enable them:
 
-1. Navigate to  **APIs and Services \&gt; Dashboard**  and explore the main dashboard.
+1. Navigate to  **APIs and Services > Dashboard**  and explore the main dashboard.
 2. Navigate to  **the API Library**  and explore the available options.
 3. To enable an API when prompted by the instructions, we must look for it in the  **API Library**  and enable it.
 4. We can also search for it in the search bar of the blue top bar.
@@ -148,7 +148,7 @@ Also check out the components available in Cloud Shell:
 2. Check the Cloud SDK components installed with gcloud components list.
   1. Remember that you can install or update any component if needed with gcloud components install ID\_COMPONENT.
 3. Check the tools, languages and their versions that appear in the documentation: [Cloud Shell: tools available](https://cloud.google.com/shell/docs/how-cloud-shell-works#tools).
-  1. In particular, try to familiarise yourself with one of the three text editors available: Nano, Vim or Emacs. If you&#39;re not familiar with any, we recommend using Nano.
+  1. In particular, try to familiarise yourself with one of the three text editors available: Nano, Vim or Emacs. If you're not familiar with any, we recommend using Nano.
   2. You can search for references, documentation and troubleshoot these editors by searching for the information on Google or Stack Overflow.
 4. Check the available storage and its mount points with the df command. Remember that the 5 GB max. in the $HOME directory is the only thing that is retained between Cloud Shell sessions, and that the rest of the storage will be reset.
 
@@ -159,20 +159,20 @@ We will work with the integrated IDE in Cloud Shell, based on [Theia](https://th
 1. Activate the editor:
   1. On the Cloud Shell button of a pencil in the white top bar.
   2. With the direct URL to [ide.cloud.google.com](https://ide.cloud.google.com/).
-2. Explore the editor&#39;s welcome page, where you can access your workspaces or your $HOME Cloud Shell directory.
+2. Explore the editor¡s welcome page, where you can access your workspaces or your $HOME Cloud Shell directory.
 3. Go to your $HOME directory and review the editor options.
-4. Using the IDE, create a new file in your $HOME directory (corresponding to /home/USERNAME), e.g. hello\_mundo.txt with any text.
+4. Using the IDE, create a new file in your $HOME directory (corresponding to /home/USERNAME), e.g. hello_world.txt with any text.
 5. Check that you have the options of having the Cloud Shell terminal, the IDE or both open, by playing around with the buttons in the top right hand corner.
-6. Go back to the Cloud Shell terminal and check that you can access the file created with the commands ls and cat hello\_mundo.txt.
-7. Create a file on the Cloud Shell terminal with the echo command &quot;hello world again!&quot; \&gt; hello\_world2.txt.
+6. Go back to the Cloud Shell terminal and check that you can access the file created with the commands ls and cat hello_world.txt.
+7. Create a file on the Cloud Shell terminal with the echo command "hello world again!" > hello_world2.txt.
 8. Review the file created with the IDE.
-9. You can always edit a Cloud Shell terminal file in the IDE directly, if you prefer to use a CLI text editor such as Nano, with the command edit hello\_world2.txt or cloudshell edit hello\_world2.txt.
+9. You can always edit a Cloud Shell terminal file in the IDE directly, if you prefer to use a CLI text editor such as Nano, with the command edit hello_world2.txt or cloudshell edit hello_world2.txt.
 
 This way you can see how to work with the Cloud Shell terminal and IDE at the same time.
 
 **Cloud Shell Actions**
 
-Let&#39;s check out some actions available in Cloud Shell:
+Let's check out some actions available in Cloud Shell:
 
 **Restart the VM**
 
@@ -182,8 +182,8 @@ Let&#39;s check out some actions available in Cloud Shell:
 
 1. To upload a file, in the 3 vertical dots menu of the Cloud Shell terminal (white top bar), select  **Upload**.
 2. Upload any local file from your PC.
-3. Check the file with the ls path\_TO\_FILE command.
-  1. You can delete it with rm PATH\_TO\_FILE.
+3. Check the file with the ls path_TO_FILE command.
+  1. You can delete it with rm PATH_TO_FILE.
 4. To download a file, e.g. one of the previously created files, you can choose to:
   1. From the Cloud Shell terminal, in the 3 vertical dots menu of the Cloud Shell terminal (white top bar), select  **Download**  and enter the path to the file or select it from the list.
   2. From the Cloud Shell IDE, open the file to download and select  **File \&gt; Download**.
@@ -203,7 +203,7 @@ To preview any web application that we run locally in Cloud Shell, we can do it 
 
 Remember that, since the Cloud Shell instance is not running locally but the connection is through a browser, we cannot connect directly to the Cloud Shell IP as if it were local, but we have to use this preview to access any port or application running on Cloud Shell.
 
-**&quot;Open in Cloud Shell&quot; button**
+**"Open in Cloud Shell" button**
 
 Sometimes, in the documentation, tutorials and online resources you can find a button called  **Open in Cloud Shell**.
 
@@ -217,7 +217,7 @@ If you open those links, you&#39;ll see the gcloud command and a button to copy 
 
 To check:
 
-1. Navigate to  **Compute Engine \&gt; VM Instances**.
+1. Navigate to  **Compute Engine > VM Instances**.
 2. Select  **Create Instance**.
 3. At the bottom of the page, click on  **equivalent command line**.
 4. Select  **Run on Cloud Shell**.
