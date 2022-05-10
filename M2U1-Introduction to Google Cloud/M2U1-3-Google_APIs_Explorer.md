@@ -51,7 +51,7 @@ _NOTE: Review the deliverables after the instructions so that you can complete t
 
 1. List the available GCS buckets.
 2. Create a GCS bucket.
-  1. As a globally unique bucket name you can use ID\_PROJECTO-M2U1-3.
+  1. As a globally unique bucket name you can use ID_PROJECT-M2U1-3.
 3. List the buckets again, showing the newly created one.
 4. Check the bucket created in the Google Cloud console, under  **Storage > Browser**.
 5. Get the details of the created bucket, with the API.
@@ -59,9 +59,9 @@ _NOTE: Review the deliverables after the instructions so that you can complete t
 
 _DELIVERABLES:_
 
-1. M2U1-3-task\_1-file\_1-screenshot\_1.jpg: Screenshot with the request and result of creating the GCS bucket.
-2. M2U1-3-task\_1-file\_2-screenshot\_2.jpg: Screenshot with request and result of getting GCS bucket details.
-3. M2U1-3-task\_1-file\_3-screenshot\_3.jpg: Screenshot with the request and result of deleting the GCS bucket.
+1. M2U1-3-task_1-file_1-screenshot_1.jpg: Screenshot with the request and result of creating the GCS bucket.
+2. M2U1-3-task_1-file_2-screenshot_2.jpg: Screenshot with request and result of getting GCS bucket details.
+3. M2U1-3-task_1-file_3-screenshot_3.jpg: Screenshot with the request and result of deleting the GCS bucket.
 
 **Create a VM Instance**
 
@@ -78,18 +78,18 @@ _NOTE: Review the deliverables after the instructions so that you can complete t
 
 _DELIVERABLES:_
 
-1. M2U1-3-task\_1-file\_4-screenshot\_4.jpg: Screenshot with the request and result of creating the GCE instance.
-2. M2U1-3-task\_1-file\_5-screenshot\_5.jpg: Screenshot with request and result of getting GCE instance details.
-3. M2U1-3-task\_1-file\_6-screenshot\_6.jpg: Screenshot with the request and result of deleting the GCE instance.
+1. M2U1-3-task_1-file_4-screenshot_4.jpg: Screenshot with the request and result of creating the GCE instance.
+2. M2U1-3-task_1-file_5-screenshot_5.jpg: Screenshot with request and result of getting GCE instance details.
+3. M2U1-3-task_1-file_6-screenshot_6.jpg: Screenshot with the request and result of deleting the GCE instance.
 
 **Deliverables Summary**
 
-1. M2U1-3-task\_1-file\_1-screenshot\_1.jpg: Screenshot with the request and result of creating the GCS bucket.
-2. M2U1-3-task\_1-file\_2-screenshot\_2.jpg: Screenshot with request and result of getting GCS bucket details.
-3. M2U1-3-task\_1-file\_3-screenshot\_3.jpg: Screenshot with the request and result of deleting the GCS bucket.
-4. M2U1-3-task\_1-file\_4-screenshot\_4.jpg: Screenshot with the request and result of creating the GCE instance.
-5. M2U1-3-task\_1-file\_5-screenshot\_5.jpg: Screenshot with request and result of getting GCE instance details.
-6. M2U1-3-task\_1-file\_6-screenshot\_6.jpg: Screenshot with the request and result of deleting the GCE instance.
+1. M2U1-3-task_1-file_1-screenshot_1.jpg: Screenshot with the request and result of creating the GCS bucket.
+2. M2U1-3-task_1-file_2-screenshot_2.jpg: Screenshot with request and result of getting GCS bucket details.
+3. M2U1-3-task_1-file_3-screenshot_3.jpg: Screenshot with the request and result of deleting the GCS bucket.
+4. M2U1-3-task_1-file_4-screenshot_4.jpg: Screenshot with the request and result of creating the GCE instance.
+5. M2U1-3-task_1-file_5-screenshot_5.jpg: Screenshot with request and result of getting GCE instance details.
+6. M2U1-3-task_1-file_6-screenshot_6.jpg: Screenshot with the request and result of deleting the GCE instance.
 
 **Clean up resources**
 
