@@ -83,7 +83,8 @@ Try using the 3 ways to explore the possibilities of SSH connection to the insta
   1. _Note:_ For your username, use your email address excluding "@domain.com", only the name.
   2. _Note:_ Although using OS Login is the most advisable in an organisation, for simplicity in the exercise we will use the manual method instead.
 
-_DELIVERABLE:_ M2U2-1-task_1-file_2-screenshot_2.jpg: Take a screenshot of the SSH terminal opened with the web console._DELIVERABLE:_ M2U2-1-task_1-file_3-screenshot_3.jpg: Take a screenshot of the open SSH connection with local Cloud SDK or Cloud Shell.
+_DELIVERABLE:_ M2U2-1-task_1-file_2-screenshot_2.jpg: Take a screenshot of the SSH terminal opened with the web console.
+_DELIVERABLE:_ M2U2-1-task_1-file_3-screenshot_3.jpg: Take a screenshot of the open SSH connection with local Cloud SDK or Cloud Shell.
 
 Once the various options have been explored, keep an SSH terminal window open to the instance to proceed to the next step.
 
@@ -173,7 +174,8 @@ To check startup and shutdown scripts:
   1. Connect by SSH to the instance using one of the methods used above.
   2. Run the following command to check the contents of the file created by the script: ls /var/tmp and cat /var/tmp/shutdown_script_output.txt.
 
-_DELIVERABLE:_ M2U2-1-task_2-file_1-screenshot_1.jpg: Take a screenshot of new web content._DELIVERABLE:_ M2U2-1-task_2-file_2-screenshot_2.jpg: Takes a screenshot of the result of the previous cat command.
+_DELIVERABLE:_ M2U2-1-task_2-file_1-screenshot_1.jpg: Take a screenshot of new web content.
+ _DELIVERABLE:_ M2U2-1-task_2-file_2-screenshot_2.jpg: Takes a screenshot of the result of the previous cat command.
 
 **Stop and modify instance configuration**
 
