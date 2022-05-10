@@ -13,7 +13,7 @@ Unit M2U1 - Exercise 1
 2. Log in with your user account if necessary.
 3. Once inside the console, check that you are working on your project. You can check this in the project information card in the control panel on the home page or in the project selection drop-down menu to the left of the blue top bar (next to the 3 blank hexagons).
 4. You can divide your desktop into 2 horizontal windows, one with the console and one with the instructions.
-5. If during the exercise you need to access Cloud Shell, you can activate it in the &quot;\&gt;\_&quot; icon on the right in the blue top bar. You can use the terminal in the same window of the console or maximise it and open it in a new window. You can also access the terminal directly at [shell.cloud.google.com](https://shell.cloud.google.com/) and the IDE at [ide.cloud.google.com](https://ide.cloud.google.com/).
+5. If during the exercise you need to access Cloud Shell, you can activate it in the ">_" icon on the right in the blue top bar. You can use the terminal in the same window of the console or maximise it and open it in a new window. You can also access the terminal directly at [shell.cloud.google.com](https://shell.cloud.google.com/) and the IDE at [ide.cloud.google.com](https://ide.cloud.google.com/).
 
 _Note: There are no questions for this exercise._
 
