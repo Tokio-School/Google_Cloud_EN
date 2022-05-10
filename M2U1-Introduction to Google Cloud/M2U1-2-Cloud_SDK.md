@@ -114,7 +114,7 @@ To work from on-premises with Cloud Shell or to copy files between on-premises a
 
 1. For the following instructions we will copy files. If you need to create a new file on Linux, you can do it with the command echo "hello world" > file.txt.
 2. Copy a local file to Cloud Shell with the command `gcloud cloud-shell scp localhost:~/file.txt cloudshell:~/file.txt`.
-3. Copy a Cloud Shell file to local with the command gcloud cloud-shell scp cloudshell:~/file.txt localhost:~/file.txt.
+3. Copy a Cloud Shell file to local with the command `gcloud cloud-shell scp cloudshell:~/file.txt localhost:~/file.txt`.
 4. Check the files copied to local and Cloud Shell with the ls command in the corresponding directory.
 
 _Optional step:_ Mount the $HOME Cloud Shell directory in a local directory:
