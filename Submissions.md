@@ -33,16 +33,20 @@ M2U1-1-questions.txt
 
 Task 1:
 Q: What is the name of the Google Cloud VM Instance service?
+
 Google Compute Engine
 
 Q: What is the name of the Google Cloud Kubernetes cluster service?
+
 Google Kubernetes Engine
 
 Task 2:
 Q: What are the MySQL and other relational database services called?
+
 Cloud SQL
 
 Q: What is the name of the serverless documentary database service?
+
 Cloud Firestore
 
 If you have any questions, you can write to the professor on the platform.
