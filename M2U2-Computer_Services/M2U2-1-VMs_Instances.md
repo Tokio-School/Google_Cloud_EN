@@ -79,7 +79,7 @@ Try using the 3 ways to explore the possibilities of SSH connection to the insta
 
 1. **Cloud Console:**  On the instance listing and instance details pages, you will find an SSH button that will allow you to open a terminal in the browser directly to the instance, creating and uploading a set f public-private keys.
 2. **Cloud SDK/Cloud Shell:**  Use the gcloud compute ssh INSTANCE\_NAME ([reference](https://cloud.google.com/sdk/gcloud/reference/compute/ssh)) command.
-3. _ **BONUS:** _ ** Local Client/PuTTy:**  Create an SSH key and manually add it to the instance ([instructions](https://cloud.google.com/compute/docs/instances/connecting-advanced#provide-key)) and use it to connect from your local terminal, WSL or PuTTY ([instructions](https://cloud.google.com/compute/docs/instances/connecting-advanced#thirdpartytools)).
+3. _ **BONUS:** _ **Local Client/PuTTy:**  Create an SSH key and manually add it to the instance ([instructions](https://cloud.google.com/compute/docs/instances/connecting-advanced#provide-key)) and use it to connect from your local terminal, WSL or PuTTY ([instructions](https://cloud.google.com/compute/docs/instances/connecting-advanced#thirdpartytools)).
   1. _Note:_ For your username, use your email address excluding "@domain.com", only the name.
   2. _Note:_ Although using OS Login is the most advisable in an organisation, for simplicity in the exercise we will use the manual method instead.
 
