@@ -66,6 +66,7 @@ Now let's check the shared access to the NFS volume from both VM instances:
 This allows us to check access to an NFS shared between both instances.
 
 _DELIVERIES:_ 
+
 M2U3-2-task_1-file_1-screenshot_1.jpg: Screenshot of Cloud Filestore instance detail page.
 
 **Task 2: Copy data from on-premises and Cloud Storage to shared NFS**
@@ -78,7 +79,7 @@ _Note:_ You can follow the instructions below in Cloud Shell or on a local Cloud
 
 We will copy files from a local environment to the shared NFS directly:
 
-1. C1.	Create a local file: echo "hello world!" > local_file.txt.
+1. Create a local file: echo "hello world!" > local_file.txt.
 2. Copy it to the NFS via one of the instances: gcloud compute scp local_file.txt INSTANCE_FIRST_NAME:/mnt/nfs --zone=europe-west1-b.
 3. Connect to the second instance via SSH and check the shared NFS content: cat /mnt/nfs/local_file.txt.
 
