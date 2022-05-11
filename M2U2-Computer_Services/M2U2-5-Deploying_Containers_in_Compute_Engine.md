@@ -96,7 +96,7 @@ First, locate the URL of your container image:
 Now create the VM instance with the automatically deployed container:
 
 1. Navigate to  **Compute Engine > VM Instances**  and click on  **Create Instance**.
-2. Under  **Container** , confirm ** Implement a container image on this VM instance** , explore the options under  **Advanced container options and indicate the following options** :
+2. Under  **Container** , confirm **Implement a container image on this VM instance** , explore the options under  **Advanced container options and indicate the following options** :
   - Container Image: The URL of the previously copied container.
 3. Create the VM instance with the following options:
   - Zone: europe-west1-b.
@@ -135,7 +135,7 @@ First, edit the application code, containerise it and upload it to the repositor
 
 To update the instance:
 
-1. Navigate to  **Compute Engine > VM Instances** , stop the instance and then start it again to restart it.
+1. Navigate to **Compute Engine > VM Instances**, stop the instance and then start it again to restart it.
 2. Once restarted, verify that you have downloaded and are running the new version of the application.
 
 _DELIVERABLES:_
