@@ -49,7 +49,7 @@ Now let's create the VM instances in those subnets.
 First create 2 custom service accounts:
 
 1. Service account 1: sa-frontend.
-2. Service account 2: sa-backend. Don&#39;t worry about the access or roles assigned to them.
+2. Service account 2: sa-backend. Don't worry about the access or roles assigned to them.
 
 Create the following VM instances:
 
@@ -140,7 +140,7 @@ M2U4-2-task_2-file_1-screenshot_1.jpg: Screenshot showing the ping command and i
 
 Now we are going to assign firewall rules to the instances to allow traffic to their websites, according to the planned connection topology.
 
-First check that it is not possible to connect from the internal-client client instance to the different websites with curl http://INSTANCE\_IP:80.
+First check that it is not possible to connect from the internal-client client instance to the different websites with curl http://INSTANCE_IP:80.
 
 Give each VM instance the corresponding network tags (&quot;network tag&quot; or &quot;tag&quot;):
 
