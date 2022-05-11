@@ -98,7 +98,7 @@ Let&#39;s see how to create additional persistent disks for a VM instance.
   - Zone: europe-west1-b.
   - Type of machine: e2-micro.
   - Boot Disk: Debian GNU/Linux 10 or 11.
-2. **Administration, Security, Disks, Networks, and Single User \&gt; Disks \&gt; Additional Disks** : Click on  **Add New Disk**  and review the available options.
+2. **Administration, Security, Disks, Networks, and Single User > Disks > Additional Disks** : Click on  **Add New Disk**  and review the available options.
 3. Create an additional persistent disk with the following features:
   - Balanced type.
   - Size = 10 GB.
