@@ -1,10 +1,12 @@
-# Introducción al cloud computing: Google Cloud
+# **Introduction to cloud computing: Google Cloud**
 
 - Copyright: Tokio School
-- Mantenedor: Marcos Manuel Ortega <info@indavelopers.com>
+- Director: Marcos Manuel Ortega [info@indavelopers.com](mailto:info@indavelopers.com)
 
-## Descripción:
-Repositorio con los ejercicios del curso, una carpeta por unidad.
+**Description:**
 
-## Set-up
-Repositorio en constante cambio y actualización, no se recomienda su clonado local sino acceso web.
+Repository with the course exercises, one folder per unit.
+
+**Set-up**
+
+Repository is constantly being changed and updated, local cloning is not recommended, but web access is recommended.
