@@ -111,7 +111,7 @@ We started by creating the 2 VPN gateways, each with 2 tunnels (for high availab
     - Previously shared IKE key: hello-vpn-1.
     - Name: tunnel-cloud-to-on-prem-2.
     - Previously shared IKE key: hello-vpn-2.
-11. Click on ** Set up GCP sessions later**.
+11. Click on **Set up GCP sessions later**.
 12. On the  **Hybrid Connectivity > VPN** page, on the  **Cloud VPN Tunnels** tab, check the statuses of the 4 VPN tunnels, which should show "Established".
 
 Now start setting up your BGP sessions:
