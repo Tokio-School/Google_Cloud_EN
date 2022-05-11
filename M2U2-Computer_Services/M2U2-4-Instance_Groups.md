@@ -101,7 +101,9 @@ Next, let's create the load balancer, with its external IP and health check:
 20. --backend-service network-lb-backend-service-uig
 21. The load balancer will take a couple of minutes to become available. You can check the status and, once available, the external IP or EXTERNAL_IP, with the command gcloud compute forwarding-rules describe network-lb-forwarding-rule-uig --region europe-west1.
 22. Once available, check that the load balancer and the unmanaged instance group with the application are working correctly by looping requests to its external IP: while true; do curl -m1 EXTERNAL_IP; done (_note:_ you can cancel the command with  **CTRL + X** ).
-We have thus created a group of unmanaged instances from 3 manually created instances, and deployed a load balancer to allow external traffic and balance it between them._DELIVERABLES:_
+We have thus created a group of unmanaged instances from 3 manually created instances, and deployed a load balancer to allow external traffic and balance it between them.
+
+_DELIVERABLES:_
 1. M2U2-3-task_1-file_1-screenshot_1.jpg: Screenshot of the details page of the unmanaged instance group.
 2. M2U2-3-task_1-file_2-screenshot_2.jpg: Screenshot the webpage of the application showing the IP of the load balancer and its response.
 **Task 2: Managed Instance Groups** In addition to unmanaged instance groups, we can use managed instance groups for serverless and stateful applications. The main difference between them is that the stateless ones have auto-scaling, while the stateful ones do not, and the update policies available for both, given the characteristics of their applications. **Create instance template** Since in a managed instance group all instance replicas are homogeneous to each other, instances are defined from an instance template.To create an instance template in a similar way to the creation of a regular instance, follow the instructions below:
