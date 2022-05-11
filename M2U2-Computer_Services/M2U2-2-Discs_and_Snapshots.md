@@ -165,22 +165,22 @@ _Note:_ If any problems arise, you can try...
 
 1. Restarting the instances.
 2. Dismounting the disk from the first instance and mounting it from the beginning in read mode in both instances.
-3. _If all else fails, don&#39;t worry, it&#39;s not always easy to manage disks in Linux, you can move on to the next point._
+3. _If all else fails, don't worry, it's not always easy to manage disks in Linux, you can move on to the next point._
 
 _DELIVERABLES_:
 
-1. M2U2-2-task\_2-file\_1-screenshot\_1.jpg: Screenshot of the instance details section, showing both associated persistent disks for one instance.
-2. M2U2-2-task\_2-file\_1-screenshot\_1.jpg: Screenshot of the instance details section, showing both associated persistent disks for the other instance.
-3. M2U2-2-task\_2-file\_5-screenshot\_5.jpg: Screenshot of the SSH terminal with only the result of the commands lsblk, sudo blkid /dev/DEVICE\_NAME and cat /etc/fstab for an instance.
-4. M2U2-2-task\_2-file\_6-screenshot\_6.jpg: Screenshot of the SSH terminal with only the result of the commands lsblk, sudo blkid /dev/DEVICE\_NAME and cat /etc/fstab for the other instance.
+1. M2U2-2-task_2-file_1-screenshot_1.jpg: Screenshot of the instance details section, showing both associated persistent disks for one instance.
+2. M2U2-2-task_2-file_1-screenshot_1.jpg: Screenshot of the instance details section, showing both associated persistent disks for the other instance.
+3. M2U2-2-task_2-file_5-screenshot_5.jpg: Screenshot of the SSH terminal with only the result of the commands lsblk, sudo blkid /dev/DEVICE_NAME and cat /etc/fstab for an instance.
+4. M2U2-2-task_2-file_6-screenshot_6.jpg: Screenshot of the SSH terminal with only the result of the commands lsblk, sudo blkid /dev/DEVICE_NAME and cat /etc/fstab for the other instance.
 
 To unmount the disk and leave the instances ready for the next tasks, repeat these instructions for both instances:
 
 1. Edit the fstab file with sudo nano fstab or another text editor.
-2. Remove the mount line from the additional disk, which had this pathway: UUID=UUID\_ADDITIONAL\_DISK /mnt/disks/MOUNT\_DIRECTORY ext4 discard,defaults,nofail 0 2
-  1. You can find the UUID of the disk with the commands lsblk and sudo blkid /dev/DEVICE\_NAME.
-3. Unmounts the disk with sudo umount /mnt/disk/MOUNT\_DIRECTORY.
-4. In the console, navigate to  **Compute Engine \&gt; VM Instances** , edit both instances, and under  **Additional Disks**  unlink the additional disk.
+2. Remove the mount line from the additional disk, which had this pathway: UUID=UUID_ADDITIONAL_DISK /mnt/disks/MOUNT_DIRECTORY ext4 discard,defaults,nofail 0 2
+  1. You can find the UUID of the disk with the commands lsblk and sudo blkid /dev/DEVICE_NAME.
+3. Unmounts the disk with sudo umount /mnt/disk/MOUNT_DIRECTORY.
+4. In the console, navigate to  **Compute Engine > VM Instances** , edit both instances, and under  **Additional Disks**  unlink the additional disk.
 
 **Task 3: Snapshots**
 
@@ -190,28 +190,28 @@ We are going to see how to work with disk snapshots to perform backups of our di
 
 **Manual Snapshot**
 
-Let&#39;s create a snapshot of the disk:
+Let's create a snapshot of the disk:
 
 1. Go to the third instance boot disk page. You can access it from several points:
-  1. Navigate to  **Compute Engine \&gt; Disks**  and click on the corresponding disk (same name as the instance), or
-  2. Navigate to  **Compute Engine \&gt; VM Instances** , click on the instance and, on the details page, on its boot disk.
+  1. Navigate to  **Compute Engine > Disks**  and click on the corresponding disk (same name as the instance), or
+  2. Navigate to  **Compute Engine > VM Instances** , click on the instance and, on the details page, on its boot disk.
 2. Create a snapshot of the disk, using the  **Create Snapshot**  button on the disk details page.
   1. _Note:_ In the previous section of the disc listing, you can also find an equivalent button in the  **Actions** column.
 3. Browse the page options and create a disk snapshot with the following options:
 
 - Source disk: Boot disk of the third instance.
-- Location: multi-regional &quot;eu&quot;.
+- Location: multi-regional "eu".
 
 **Recurring Snapshots**
 
-Now let&#39;s create a recurring snapshot policy and assign it to that disk:
+Now let's create a recurring snapshot policy and assign it to that disk:
 
-1. Navigate to  **Compute Engine \&gt; Snapshots**  and click  **Create Snapshot Schedule**.
+1. Navigate to  **Compute Engine > Snapshots**  and click  **Create Snapshot Schedule**.
 2. Explore the options and create a schedule with the following features:
   - Region: europe-west1.
-  - Location: multi-regional &quot;eu&quot;.
+  - Location: multi-regional "eu".
   - Daily frequency, from 4:00 to 5:00
-3. Now navigate to  **Compute Engine \&gt; Disks** , click on the boot disk of the third snapshot, and then click **Edit**.
+3. Now navigate to  **Compute Engine > Disks** , click on the boot disk of the third snapshot, and then click **Edit**.
 4. Under  **Scheduling Snapshots** , assign the created schedule to it and save the changes.
 
 In this way we can create snapshots manually and automatically to make a backup of our data or clone an instance.
@@ -220,12 +220,12 @@ _Note:_ We will clone instances from snapshots in the next exercise.
 
 _DELIVERABLES_:
 
-1. M2U2-2-task\_3-file\_1-screenshot\_1.jpg: Screenshot the details section of the manually created snapshot.
-2. M2U2-2-task\_3-file\_2-screenshot\_2.jpg: Screenshot the details section of the disk, showing the associated snapshot schedule.
+1. M2U2-2-task_3-file_1-screenshot_1.jpg: Screenshot the details section of the manually created snapshot.
+2. M2U2-2-task_3-file_2-screenshot_2.jpg: Screenshot the details section of the disk, showing the associated snapshot schedule.
 
 **Task 4: Local SSD Disks**
 
-Now let&#39;s create a new instance with an available local SSD disk. Remember the restrictions on such local SSDs.
+Now let's create a new instance with an available local SSD disk. Remember the restrictions on such local SSDs.
 
 Because of these restrictions, only a local SSD disk can be added when creating the instance and cannot be used as a boot disk.
 
@@ -236,30 +236,30 @@ Because of these restrictions, only a local SSD disk can be added when creating 
   - Zone: europe-west1-b.
   - Machine Type: n1-standard-2 (_Note:_ Local SSDs are not available for E2 or shared core instances).
   - Boot Disk: Debian GNU/Linux 11.
-  - **Management, security, disks, networks and single user \&gt; Disks** : Adds 1 NVMe local SSD (with 375 GB/disk).
+  - **Management, security, disks, networks and single user > Disks** : Adds 1 NVMe local SSD (with 375 GB/disk).
 
 As for any other disk, we must first format and mount the disk, following steps similar to the previous ones:
 
 1. Once the instance is created, connect to it via SSH.
 2. Format the local SSD disk:
   1. List the disks available with the command lsblk.
-  2. Find the name of the unmounted disk, e.g. &quot;nvme0n1&quot;. We will refer to it as DEVICE\_NAME.
-  3. Format the disk with the command sudo mkfs.ext4 -F /dev/DEVICE\_NAME ([docs](https://cloud.google.com/compute/docs/disks/local-ssd#formatindividual)).
+  2. Find the name of the unmounted disk, e.g. "nvme0n1". We will refer to it as DEVICE_NAME.
+  3. Format the disk with the command sudo mkfs.ext4 -F /dev/DEVICE_NAME ([docs](https://cloud.google.com/compute/docs/disks/local-ssd#formatindividual)).
 3. Mount the additional persistent disk onto the instance:
-  1. Create a mount directory in the file system at your preferred location with e.g. the command sudo mkdir -p /mnt/disks/MOUNT\_DIRECTORY.
+  1. Create a mount directory in the file system at your preferred location with e.g. the command sudo mkdir -p /mnt/disks/MOUNT_DIRECTORY.
   2. Before continuing, check that it was created correctly with ls /mnt/disks/.
-  3. Mount the disk in that directory with the sudo mount /dev/DEVICE\_NAME/mnt/disks/MOUNT\_DIRECTORY.
-  4. Configure write access to the mount directory with the sudo command chmod a+w /mnt/disks/MOUNT\_DIRECTORY.
+  3. Mount the disk in that directory with the sudo mount /dev/DEVICE_NAME/mnt/disks/MOUNT_DIRECTORY.
+  4. Configure write access to the mount directory with the sudo command chmod a+w /mnt/disks/MOUNT_DIRECTORY.
 4. Configure automatic disk mounting when the instance restarts:
   1. Create a backup of the current fstab configuration: sudo cp /etc/fstab /etc/fstab.backup.
-  2. Find the UUID of the additional disk: sudo blkid /dev/DEVICE\_NAME. We will refer to it as UUID\_ADDITIONAL\_DISK
+  2. Find the UUID of the additional disk: sudo blkid /dev/DEVICE_NAME. We will refer to it as UUID_ADDITIONAL_DISK
   3. Edit the/etc/fstab file with the text editor of your choice, e.g. Nano: sudo nano /etc/fstab.
-  4. Add an additional line/entry with the following information: UUID=UUID\_DISCO\_ADICONAL /mnt/disks/MOUNT\_DIRECTORY ext4 discard,defaults,nofail 0 2 (_note:_ the entry starts with the text UUID= not to be modified, but UUID\_ADDITIONAL \_DISK and MOUNT\_DIRECTORY).
+  4. Add an additional line/entry with the following information: UUID=UUID_DISCO_ADICONAL /mnt/disks/MOUNT_DIRECTORY ext4 discard,defaults,nofail 0 2 (_note:_ the entry starts with the text UUID= not to be modified, but UUID_ADDITIONAL_DISK and MOUNT_DIRECTORY).
   5. Save the file and verify that it has been edited correctly: cat /etc/fstab.
     1. _Note:_ The operation of saving and closing a file in Nano is done with the steps  **CTRL + X, Y, ENTER**.
 5. Make sure it works properly:
-  1. Create a new file, e.g. with the echo command &quot;hello world!&quot; \&gt; /mnt/disks/MOUNT\_DIRECTORY/sample\_file.txt.
-  2. Check the new file with the command cat /mnt/disks/MOUNT\_DIRECTORY/sample\_file.txt.
+  1. Create a new file, e.g. with the echo command "hello world!" > /mnt/disks/MOUNT_DIRECTORY/sample_file.txt.
+  2. Check the new file with the command cat /mnt/disks/MOUNT_DIRECTORY/sample_file.txt.
 
 **Usual workflow**
 
@@ -268,46 +268,46 @@ Since the information on a local SSD disk does not persist if the instance is st
 To simulate this workflow, follow these steps:
 
 1. Returns the SSH terminal to the new instance.
-2. Create an original file on the persistent disk of the instance, which will simulate a file to be processed, e.g. with the echo command &quot;data to be processed&quot; \&gt; $HOME/sample\_file.txt.
-3. Copy the data file to be processed to the local SSD: cp $HOME/sample\_file.txt /mnt/disks/MOUNT\_DIRECTORY/sample\_file.txt.
-4. Simulate the processing of such data on the scratch disk by adding a new line to the same echo &quot;processed data&quot; \&gt;\&gt; /mnt/disks/MOUNT\_DIRECTORY/sample\_file.txt.
-5. Check the processed file: cat /mnt/disks/MOUNT\_DIRECTORY/sample\_file.txt.
-6. After data processing is complete, copy the file to the persistent disk: cp /mnt/disks/MOUNT\_DIRECTORY/sample\_file.txt $HOME/sample\_file.txt
-7. Check the file with the processed data: cat $HOME/sample\_file.txt.
+2. Create an original file on the persistent disk of the instance, which will simulate a file to be processed, e.g. with the echo command "data to be processed" > $HOME/sample_file.txt.
+3. Copy the data file to be processed to the local SSD: cp $HOME/sample_file.txt /mnt/disks/MOUNT_DIRECTORY/sample_file.txt.
+4. Simulate the processing of such data on the scratch disk by adding a new line to the same echo "processed data" >> /mnt/disks/MOUNT_DIRECTORY/sample_file.txt.
+5. Check the processed file: cat /mnt/disks/MOUNT_DIRECTORY/sample_file.txt.
+6. After data processing is complete, copy the file to the persistent disk: cp /mnt/disks/MOUNT_DIRECTORY/sample_file.txt $HOME/sample_file.txt
+7. Check the file with the processed data: cat $HOME/sample_file.txt.
 
-_DELIVERABLE:_ M2U2-2-task\_4-file\_1-screenshot\_1.jpg: Screenshot the details section of the instance, showing the persistent boot disk and the local SSD disk.
+_DELIVERABLE:_ M2U2-2-task_4-file_1-screenshot_1.jpg: Screenshot the details section of the instance, showing the persistent boot disk and the local SSD disk.
 
 **Simulated VM Stop**
 
-As we discussed, an instance with a local SSD disk cannot stop, and if it stops due to an unexpected problem, it will start again, so we cannot &quot;restart&quot; an instance.
+As we discussed, an instance with a local SSD disk cannot stop, and if it stops due to an unexpected problem, it will start again, so we cannot "restart" an instance.
 
 We can simulate a hardware problem or any other that would stop the instance by stopping it from the OS:
 
 1. On the SSH terminal of the instance, stop it with the command sudo shutdown now.
   1. _Note:_ Stopping the instance will immediately lose the SSH connection to it.
-2. In the console, in the  **Compute Engine \&gt; VM Instances** section, you will see how the new instance appears stopped and cannot be restarted.
+2. In the console, in the  **Compute Engine > VM Instances** section, you will see how the new instance appears stopped and cannot be restarted.
   1. _Note:_ Sometimes, it will take a while to show this status. Refresh the page in the console, reload the page, enter the instance details, etc., and it will finally display itself accordingly.
 
 **Deliverables Summary**
 
 1. M2U3-3-questions.txt: Answers to all questions raised in the exercise.
-2. M2U2-2-task\_1-file\_1-screenshot\_1.jpg: Screenshot of the details section of the first instance, showing that it has no boot disk associated.
-3. M2U2-2-task\_1-file\_2-screenshot\_2.jpg: Screenshot of the details section of the second instance, showing the associated boot disk.
-4. M2U2-2-task\_1-file\_3-screenshot\_3.jpg: Screenshot of the Compute Engine disk section, showing both disks.
-5. M2U2-2-task\_2-file\_1-screenshot\_1.jpg: Screenshot of the instance details section, showing both associated persistent disks.
-6. M2U2-2-task\_2-file\_2-screenshot\_2.jpg: Screenshot the SSH terminal with just the result of the commands lsblk, sudo blkid /dev/DEVICE\_NAME and cat /etc/fstab (_note:_ you can clear the terminal of other commands with clear).
-7. M2U2-2-task\_2-file\_1-screenshot\_1.jpg: Screenshot of the instance details section, showing both associated persistent disks for one instance.
-8. M2U2-2-task\_2-file\_1-screenshot\_1.jpg: Screenshot of the instance details section, showing both associated persistent disks for the other instance.
-9. M2U2-2-task\_2-file\_5-screenshot\_5.jpg: Screenshot of the SSH terminal with only the result of the commands lsblk, sudo blkid /dev/DEVICE\_NAME and cat /etc/fstab for an instance.
-10. M2U2-2-task\_2-file\_6-screenshot\_6.jpg: Screenshot of the SSH terminal with only the result of the commands lsblk, sudo blkid /dev/DEVICE\_NAME and cat /etc/fstab for the other instance.
-11. M2U2-2-task\_3-file\_1-screenshot\_1.jpg: Screenshot the details section of the manually created snapshot.
-12. M2U2-2-task\_3-file\_2-screenshot\_2.jpg: Screenshot the details section of the disk, showing the associated snapshot schedule.
-13.  M2U2-2-task\_4-file\_1-screenshot\_1.jpg: Screenshot the details section of the instance, showing the persistent boot disk and the local SSD disk.
+2. M2U2-2-task_1-file_1-screenshot_1.jpg: Screenshot of the details section of the first instance, showing that it has no boot disk associated.
+3. M2U2-2-task_1-file_2-screenshot_2.jpg: Screenshot of the details section of the second instance, showing the associated boot disk.
+4. M2U2-2-task_1-file_3-screenshot_3.jpg: Screenshot of the Compute Engine disk section, showing both disks.
+5. M2U2-2-task_2-file_1-screenshot_1.jpg: Screenshot of the instance details section, showing both associated persistent disks.
+6. M2U2-2-task_2-file_2-screenshot_2.jpg: Screenshot the SSH terminal with just the result of the commands lsblk, sudo blkid /dev/DEVICE_NAME and cat /etc/fstab (_note:_ you can clear the terminal of other commands with clear).
+7. M2U2-2-task_2-file_1-screenshot_1.jpg: Screenshot of the instance details section, showing both associated persistent disks for one instance.
+8. M2U2-2-task_2-file_1-screenshot_1.jpg: Screenshot of the instance details section, showing both associated persistent disks for the other instance.
+9. M2U2-2-task_2-file_5-screenshot_5.jpg: Screenshot of the SSH terminal with only the result of the commands lsblk, sudo blkid /dev/DEVICE_NAME and cat /etc/fstab for an instance.
+10. M2U2-2-task_2-file_6-screenshot_6.jpg: Screenshot of the SSH terminal with only the result of the commands lsblk, sudo blkid /dev/DEVICE_NAME and cat /etc/fstab for the other instance.
+11. M2U2-2-task_3-file_1-screenshot_1.jpg: Screenshot the details section of the manually created snapshot.
+12. M2U2-2-task_3-file_2-screenshot_2.jpg: Screenshot the details section of the disk, showing the associated snapshot schedule.
+13. M2U2-2-task_4-file_1-screenshot_1.jpg: Screenshot the details section of the instance, showing the persistent boot disk and the local SSD disk.
 
 **Clean up resources**
 
 Follow the instructions below carefully to clean up the resources and settings used in your project. This will ensure that you avoid ongoing costs and problems in subsequent fiscal years in particular.
 
-1. In  **Compute Engine \&gt; VM Instances** , delete all instances created.
-2. In  **Compute Engine \&gt; Snapshots** , delete all snapshots and snapshot scheduling.
-3. In **Computer Engine \&gt; Disks** , make sure that all disks have been removed when deleting instances, and delete the ones that have not.
+1. In  **Compute Engine > VM Instances** , delete all instances created.
+2. In  **Compute Engine > Snapshots** , delete all snapshots and snapshot scheduling.
+3. In **Computer Engine > Disks** , make sure that all disks have been removed when deleting instances, and delete the ones that have not.
