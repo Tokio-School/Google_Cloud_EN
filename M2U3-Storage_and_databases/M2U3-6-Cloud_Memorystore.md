@@ -38,15 +38,15 @@ Let's start by creating the Cloud Memorystore instance:
   6. Authorized VPC network: projects/PROJECT\_ID/global/networks/default.
 3. Copy the instance IP address
 
-_Note:_
-
+_Note:_ 
 1. If you have a problem with the IP ranges when creating the instance, navigate to  **VPC Network > VCP Networks > default network** , select  **Private Connection to Services**  and assign an automatic IP range with a length of 20.
 2. If you're still having problems, create a new custom VPC and a subnet in europe-west1 ([docs](https://cloud.google.com/vpc/docs/using-vpc#create-custom-network)) and enable Private Services Accesss in it ([docs](https://cloud.google.com/vpc/docs/configure-private-services-access)).
-3. Wait until the Cloud Memorystore for Redis instance has been created and copy the instance IP, which we will call the REDIS_INSTANCE IP.
-4. This allows us to deploy a Cloud Memorystore instance compatible with Redis for use as cache, in-memory database, etc.
-5. **Create client VM instance**
-6. Now let's create a VM instance to act as a client and connect to the Cloud Memorystore instance.
-7. Create a VM instance with the following characteristics:
+
+Wait until the Cloud Memorystore for Redis instance has been created and copy the instance IP, which we will call the REDIS_INSTANCE IP.
+This allows us to deploy a Cloud Memorystore instance compatible with Redis for use as cache, in-memory database, etc.
+**Create client VM instance**
+Now let's create a VM instance to act as a client and connect to the Cloud Memorystore instance.
+Create a VM instance with the following characteristics:
 
 - Name: client-vm.
 - Zone: europe-west1-b.
@@ -63,20 +63,20 @@ _Note:_
 3. Check the connection on the terminal to Redis: PING. You must receive PONG as an answer.
 4. Check the key creation: SET HELLO WORLD and GET HELLO. You must answer WORLD.
 
-1. We have thus connected to the Redis instance from a client VM instance.
+We have thus connected to the Redis instance from a client VM instance.
 
-2. _DELIVERABLES:_ 
+_DELIVERABLES:_ 
 
 M2U3-6-task_1-file_1-screenshot_1.jpg: Screenshot of the connection to the Redis terminal showing the response of the PING, SET HELLO WORLD and GET HELLO commands.
 
-3. **Task 2: Deploy a sample web application**
-4. Now let's deploy a sample web application that uses a Cloud Memorystore Redis instance.
-5. The app keeps a count of visits to your/Redis endpoint. Start by looking over the files in your [repository](https://github.com/GoogleCloudPlatform/python-docs-samples/tree/master/memorystore/redis).
-6. **Deploy the web application**
-7. The application needs a Cloud Memorystore instance already deployed, with its internal IP localised and copied.
-8. You also need a GCS bucket, so create a regional bucket in europe-west1 and write down its name, BUCKET\_NAME.
-9. Once the bucket is deployed, deploy the application from Cloud Shell or your on-premises Cloud SDK installation:
+**Task 2: Deploy a sample web application**
+Now let's deploy a sample web application that uses a Cloud Memorystore Redis instance.
+The app keeps a count of visits to your/Redis endpoint. Start by looking over the files in your [repository](https://github.com/GoogleCloudPlatform/python-docs-samples/tree/master/memorystore/redis).
 
+**Deploy the web application**
+The application needs a Cloud Memorystore instance already deployed, with its internal IP localised and copied.
+You also need a GCS bucket, so create a regional bucket in europe-west1 and write down its name, BUCKET\_NAME.
+Once the bucket is deployed, deploy the application from Cloud Shell or your on-premises Cloud SDK installation:
 1. Clone the repository: git clone https://github.com/GoogleCloudPlatform/python-docs-samples.
 2. Open the corresponding directory: cd python-docs-samples/memorystore/redis/gce_deployment.
 3. The deploy.sh script deploys the application artifact to GCS, deploys GCE instance, runs the application with an instance startup script, and creates a firewall rule to enable traffic to it.
@@ -84,10 +84,11 @@ M2U3-6-task_1-file_1-screenshot_1.jpg: Screenshot of the connection to the Redis
 5. Set the local environment variable to configure access to the GCS bucket: export GCS_BUCKET_NAME= BUCKET_NAME.
 6. Enable the script as executable and run it: chmod +x deploy.sh and./deploy.sh.
 
-1. **Check the web application**
-2. Once the VM instance is ready, copy its external IP and accesses it from your browser: http://EXTERNAL\_IP:8080.
-3. You can use the local  teardown.sh script to remove the VM instance and firewall rule: chmod +x teardown.sh and ./teardown.sh.
-4. _DELIVERABLES:_ 
+**Check the web application**
+Once the VM instance is ready, copy its external IP and accesses it from your browser: http://EXTERNAL\_IP:8080.
+You can use the local  teardown.sh script to remove the VM instance and firewall rule: chmod +x teardown.sh and ./teardown.sh.
+
+_DELIVERABLES:_ 
 
 M2U3-6-task\_2-file\_1-screenshot\_1.jpg: Screenshot of the website showing its URL.
 
